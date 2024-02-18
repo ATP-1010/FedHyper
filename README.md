@@ -1,4 +1,4 @@
-# FedHyper (PyTorch)
+# FedHyper: A Universal and Robust Learning Rate Scheduler for Federated Learning with Hypergradient Descent
 Code of ICLR 2024 paper : [FedHyper: A Universal and Robust Learning Rate Scheduler for Federated Learning with Hypergradient Descent](https://arxiv.org/pdf/2310.03156.pdf).
 
 The code include the FedHyper-G, FedHyper-SL, FedHyper-CL, and other methods and baselines in the paper.

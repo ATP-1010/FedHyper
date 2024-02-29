@@ -114,7 +114,7 @@ if __name__ == '__main__':
         old_weights = copy.deepcopy(global_weights)
 
         for idx in idxs_users:
-            print('Client ID:', idx)
+            #print('Client ID:', idx)
             local_model = LocalUpdate(args=args, dataset=train_dataset,
                                       idxs=user_groups[idx], logger=logger, lrs = local_lr, gtl=gradient_vector)
             w, loss, lr_new = local_model.update_weights(
@@ -125,7 +125,7 @@ if __name__ == '__main__':
             local_weights.append(copy.deepcopy(w))
             local_losses.append(copy.deepcopy(loss))
         
-        print("New Local Learning Rates: ", local_lr)
+        #print("New Local Learning Rates: ", local_lr)
 
         # Update Temp Global Model
         global_weights_help = average_weights(local_weights)
